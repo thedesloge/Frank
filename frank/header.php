@@ -16,8 +16,7 @@
 	<?php 
 	if(!frank_devmode()) {
 		wp_enqueue_style('frank_stylesheet', get_bloginfo( 'stylesheet_url' ), null, '0.1', 'all' );
-	}
-	else {
+	} else {
 		wp_enqueue_style('frank_stylesheet_reset', get_bloginfo('template_directory').'/stylesheets/css/reset.css', null, '0.1', 'all' );
 		wp_enqueue_style('frank_stylesheet_grid', get_bloginfo('template_directory').'/stylesheets/css/grid.css', null, '0.1', 'all' );
 		wp_enqueue_style('frank_stylesheet_global', get_bloginfo('template_directory').'/stylesheets/css/global.css', null, '0.1', 'all' );

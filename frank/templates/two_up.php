@@ -5,10 +5,11 @@
 ?>
 <div class='content twoup row'>
 	<div class='nav content-header'>
-		<span class='label'><?php print($title); ?></span>
-		<span class='caption'><?php print($caption) ?></span> <span class='more'><?php next_posts_link('View more&hellip;'); ?></span>
+		<span class='label'><?php print($GLOBALS["title"]); ?></span>
+		<span class='caption'><?php print($GLOBALS["caption"]) ?></span> <span class='more'><?php next_posts_link('View more&hellip;'); ?></span>
 	</div>
-	<div class='contents row'>	
+	<div class='contents row'>
+	<?php $queryObject = $GLOBALS["queryObject"]; ?>
 	<?php while ( $queryObject->have_posts() ) : $queryObject->the_post(); ?>
 		<article itemscope itemtype="http://schema.org/BlogPosting" class='post six columns post-<?php echo($queryObject->current_post+1); ?>'>
 			<header>
