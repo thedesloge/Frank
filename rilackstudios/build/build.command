@@ -26,10 +26,10 @@ juicer merge ../stylesheets/css/main.css --force -o ../style.css -c none --embed
 juicer merge -i ../js/frank.slideshow.js ../js/simplebox.js ../js/main.js --force -o ../js/somerandomdude.js -c none -m closure_compiler
 echo "/* 
 Theme Name:     RilackStudios theme
-Theme URI:      http://somerandomdude.com/work/frank 
+Theme URI:      http://rilackstudios.com 
 Description:    Child theme for the Frank theme  
-Author:         P.J. Onori 
-Author URI:     http://somerandomdude.com/hello/  
+Author:         Donald Desloge 
+Author URI:     http://rilackstudios.com  
 Template:       frank  
 Version:        0.1.0 
 License:		Creative Commons Share Alike 3.0
