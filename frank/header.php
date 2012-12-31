@@ -58,8 +58,9 @@
 	<!--[if lt IE 7]>
 	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
 	<![endif]-->
+
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-	<?php wp_head(); ?>	
+	<?php wp_head(); ?>
 </head>
 <body id="page" <?php body_class($class); ?>>
 <div class="container">

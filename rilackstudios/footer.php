@@ -18,9 +18,11 @@
 <?php if(frank_devmode()) : ?>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/frank.slideshow.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/simplebox.js"></script>
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>	
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.foundation.orbit.js"></script>
 <?php else : ?>
 	<script async src="<?php echo get_stylesheet_directory_uri(); ?>/js/somerandomdude.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.foundation.orbit.js"></script>
 <?php endif; ?>	
 
 </body>

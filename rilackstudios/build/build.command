@@ -22,6 +22,7 @@ sass --update ../stylesheets/scss/mobile.scss:../stylesheets/css/mobile.css --tr
 sass --update ../stylesheets/scss/print.scss:../stylesheets/css/print.css --trace
 sass --update ../stylesheets/scss/ie.scss:../stylesheets/css/ie.css --trace
 sass --update ../stylesheets/scss/ie7.scss:../stylesheets/css/ie7.css --trace
+sass --update ../stylesheets/scss/orbit.scss:../stylesheets/css/orbit.css --trace
 juicer merge ../stylesheets/css/main.css --force -o ../style.css -c none --embed-images data_uri -d /Library/WebServer/Documents
 juicer merge -i ../js/frank.slideshow.js ../js/simplebox.js ../js/main.js --force -o ../js/somerandomdude.js -c none -m closure_compiler
 echo "/* 
