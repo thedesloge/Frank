@@ -1,19 +1,23 @@
 <?php
-function foobar_func($atts){
-    return "foo and bars";
-}
-add_shortcode('foobar', 'foobar_func');
 
-// [bartag foo="foo-value"]
-function bartag_func( $atts ) {
-	extract( shortcode_atts( array(
-		'foo' => 'something',
-		'bar' => 'something else',
-	), $atts ) );
-
-	return "foo = {$foo} and bar = {$bar}";
+add_action('init', 'create_post_type');
+function create_post_type() {
+	register_post_type( 'rs_portfolio',
+		array(
+			'labels' => array(
+				'name' => __( 'Portfolio Posts' ),
+				'singular_name' => __( 'Portfolio Post' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array(
+			'title',
+			'editor',
+			'thumbnail'
+		    )
+		)
+	);
 }
-add_shortcode( 'bartag', 'bartag_func' );
 
 function orbit_slideshow_func( $atts , $content=null){
     $rand = rand(1, 11);

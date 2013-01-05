@@ -7,7 +7,7 @@
 <div class="row">
     <?php
         $addEndTag = true;
-        $the_query = new WP_Query('category_name=portfolio');
+        $the_query = new WP_Query('post_type=rs_portfolio');
         while( $the_query->have_posts()):
             $the_query->the_post();
     ?>
